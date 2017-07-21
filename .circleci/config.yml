@@ -11,7 +11,11 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Build
+          name: "Build 1"
           command: |
-            docker build -t eugenesia/circleci-debug .
+            docker build -t eugenesia/circleci-debug:1 .
+      - run:
+          name: "Build 2"
+          command: |
+            docker build -t eugenesia/circleci-debug:2 .
 
