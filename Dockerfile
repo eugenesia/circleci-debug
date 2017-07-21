@@ -1,5 +1,7 @@
 FROM debian:jessie
 
-COPY sleep.sh /
-RUN ./sleep.sh
+RUN mkdir /dir1
+COPY sleep.sh /dir1/
+RUN cd /dir1 && \
+  ./sleep.sh
 
