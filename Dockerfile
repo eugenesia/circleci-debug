@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 
 # Setup the container.
 # RUN apt-get update && \
