@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:wheezy
 
 # Setup the container.
 # RUN apt-get update && \
