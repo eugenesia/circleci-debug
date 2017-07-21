@@ -2,7 +2,7 @@ FROM debian:jessie
 
 # Setup the container.
 RUN apt-get update && \
-  apt-get install lsof
+  apt-get install -y lsof
 
 COPY sleep.sh /
 RUN mkdir /dir1 && \
