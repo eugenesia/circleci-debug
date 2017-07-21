@@ -11,7 +11,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Test1
+          name: Build
           command: |
-            echo 'Hello world'
+            docker build -t eugenesia/circleci-debug .
 
