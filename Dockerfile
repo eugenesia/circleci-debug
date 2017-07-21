@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM debian:jessie
 
 # Setup the container.
 # RUN apt-get update && \
