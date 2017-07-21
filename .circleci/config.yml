@@ -14,8 +14,7 @@ jobs:
           name: "Build 1"
           shell: /bin/bash
           command: |
-            mkdir dir1 && mv sleep.sh dir1/ && cd dir1 && ./sleep.sh
-            # docker build -t eugenesia/circleci-debug:1 .
+            docker build -t eugenesia/circleci-debug:1 .
       - run:
           name: "Build 2"
           command: |

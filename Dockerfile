@@ -9,7 +9,7 @@ RUN mkdir /dir1 && \
   lsof && ps aux && ls -al && \
   mv /sleep.sh /dir1 && \
   # DEBUG
-  cd /dir1 && \
+  # cd /dir1 && \
   # sleep 5s && \
-  ./sleep.sh
+  /dir1/sleep.sh
 
