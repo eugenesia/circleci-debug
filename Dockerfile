@@ -11,5 +11,5 @@ RUN mkdir /dir1 && \
   lsof && ps aux && ls -al && \
   cd /dir1 && \
   # sleep 5s && \
-  /dir1/sleep.sh
+  ./sleep.sh
 
