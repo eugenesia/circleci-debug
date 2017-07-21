@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This script just sleeps for a fixed number of seconds.
+
 SLEEP_SECONDS=30
 
 echo -n 'Sleeping: '
