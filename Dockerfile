@@ -9,6 +9,8 @@ RUN mkdir /dir1 && \
   # This takes longer than expected, seems to be unfinished by the time of the
   # next command.
   mv /sleep.sh /dir1 && \
+  # Wait for sleep.sh to finish being written.
+  sleep 5s && \
   # "Text file busy" error as sleep.sh is still being written.
   /dir1/sleep.sh
 
