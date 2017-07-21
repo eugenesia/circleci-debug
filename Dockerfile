@@ -7,7 +7,7 @@ RUN apt-get update && \
 COPY sleep.sh /
 RUN mkdir /dir1 && \
   # lsof shows that sleep.sh is being used.
-  lsof +D /dir1 && ps aux && ls -al && \
+  lsof && ps aux && ls -al && \
   mv /sleep.sh /dir1 && \
   # "Text file busy" error as sleep.sh is still being written.
   /dir1/sleep.sh
