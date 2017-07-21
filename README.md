@@ -1,5 +1,7 @@
-CircleCI Debug   [![CircleCI](https://circleci.com/gh/eugenesia/circleci-debug.svg?style=shield)](https://circleci.com/gh/eugenesia/circleci-debug)
+CircleCI Debug
 ==============
+
+[![CircleCI](https://circleci.com/gh/eugenesia/circleci-debug.svg?style=shield)](https://circleci.com/gh/eugenesia/circleci-debug)
 
 This is a repo just for debugging CircleCI.
 
