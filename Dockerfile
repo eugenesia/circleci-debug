@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM alpine:latest
 
 # Setup the container.
 # RUN apt-get update && \
