@@ -1,0 +1,17 @@
+# PHP CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-php/ for more details
+version: 2
+jobs:
+  build:
+    docker:
+      # Image to use as build runner.
+      - image: docker:latest
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build and push Jessie image
+          command: |
+            echo 'Hello world'
+
