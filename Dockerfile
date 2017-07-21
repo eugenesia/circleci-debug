@@ -6,9 +6,9 @@ RUN apt-get update && \
 
 COPY sleep.sh /
 RUN mkdir /dir1 && \
+  lsof && ps aux && ls -al && \
   mv /sleep.sh /dir1 && \
   # DEBUG
-  # lsof && ps aux && ls -al && \
   cd /dir1 && \
   # sleep 5s && \
   ./sleep.sh
