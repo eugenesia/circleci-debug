@@ -6,16 +6,10 @@ jobs:
   build:
     docker:
       # Image to use as build runner.
-      - image: docker:latest
+      - image: debian:jessie
     steps:
       - checkout
-      - setup_remote_docker
       - run:
-          name: "Build 1"
-          command: |
-            docker build -t eugenesia/circleci-debug:1 .
-      - run:
-          name: "Build 2"
-          command: |
-            docker build -t eugenesia/circleci-debug:2 .
+          name: "Exec 1"
+          command: mkdir /dir1 && mv sleep.sh /dir1 && /dir1/sleep.sh
 
